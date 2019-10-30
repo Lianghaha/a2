@@ -1,8 +1,6 @@
 import nltk
 grammar = nltk.grammar.CFG.fromstring(""" 
 S -> NP VP
-S -> Aux NP VP 
-S -> VP
 NP -> N 
 NP -> DET N 
 NP -> Adj N 
@@ -17,8 +15,23 @@ Adv -> 'quickly' | 'slowly'
 N -> 'dogs' | 'parks' | 'statues' | 'people' 
 V -> ' race' | 'walk' | 'eat' 
 P -> 'in' | 'to' | 'on' | 'under ' | 'with'
+
+S -> VP
+S -> Aux NP VP 
+
+S -> who VP
+S -> who Aux VP
+
+S -> where NP VP
+S -> where Aux NP VP
+
+VPNew -> V Adv
+VPNew -> V Adv PP
+
+S -> what Aux NP VPNew
+
 Aux -> 'should' | 'will'
-What -> 'what'
+what -> 'what'
 who -> 'who'
 where -> 'where'
 """)
@@ -35,7 +48,7 @@ What N V Adv PP
 What should N V DET N Adv PP
 Where V DET N Adv PP
 """
-sentence = nltk.tokenize.word_tokenize(""" Walk your dogs quickly """.lower())
+sentence = nltk.tokenize.word_tokenize(""" where should people walk their dogs quickly """.lower())
 parser = nltk.parse.BottomUpChartParser(grammar)
 for t in parser.parse_all(sentence):
     print(t)
