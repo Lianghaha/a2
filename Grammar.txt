@@ -2,16 +2,51 @@
 
 S -> NP VP
 S -> NPrp VP
+
+S -> NP VPPast
+S -> NPrp VPPast
+S -> NP VPhave VPPast
+S -> NPrp VPhave VPPast
+S -> NP VPhave Ving
+S -> NPrp VPhave Ving
+
 NP -> N
 NP -> NPro
 NP -> Det NP
 NP -> NP PP
 NP -> Adj N
-Adj -> Adj Adj
+
 VP -> V Adv
 VP -> Adv V
 VP -> V
-PP -> P NP
+VP -> VP NP
+VP -> VP NPrp
+VP -> VP PP
+VP -> VP NP VPto
+VP -> VP NPrp VPto
+VP -> Aux VP
 
-#Q3.2
+VPPast -> VPast Adv
+VPPast -> Adv VPast
+VPPast -> VPast
+VPPast -> VPPast NP
+VPPast -> VPPast NPrp
+VPPast -> VPPast PP
+VPPast -> VPPast NP VPto
+VPPast -> VPPast NPrp VPto
+
+VPhave -> Aux Vhave
+VPhave -> VPhave Vbeen
+VPhave -> Vhave
+
+VPto -> Pto V
+
+PP -> P NP
+Adj -> Adj Adj
+
+
+
+
+
+
 
