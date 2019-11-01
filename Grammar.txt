@@ -1,0 +1,17 @@
+# Q3.1
+
+S -> NP VP
+S -> NPrp VP
+NP -> N
+NP -> NPro
+NP -> Det NP
+NP -> NP PP
+NP -> Adj N
+Adj -> Adj Adj
+VP -> V Adv
+VP -> Adv V
+VP -> V
+PP -> P NP
+
+#Q3.2
+

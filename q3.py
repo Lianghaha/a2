@@ -1,10 +1,10 @@
 import nltk
-grammar_file = open("q3.txt", "r")
-grammar_text = grammar_file.read()
+
+grammar_text = open("Grammar.txt", "r").read() + open("Lexicon.txt", "r").read()
 grammar = nltk.grammar.CFG.fromstring(grammar_text)
 
-#file = open("q3 Negative.txt", "r")
-file = open("q3 Positive.txt", "r")
+file = open("q3 Negative.txt", "r")
+#file = open("q3 Positive.txt", "r")
 parser = nltk.parse.BottomUpChartParser(grammar)
 total = 0
 correct = 0
@@ -21,7 +21,7 @@ for line in file:
     for item in result:
         print(item)
 
-print("\nTotal # sentence: {}, Correct: {}".format(total, correct))
+print("\nTotal: {}, Correct: {}".format(total, correct))
 
-
-
+# TODO
+# Grammar, Lexicon, Positive, Negative, Overgen, Undergen

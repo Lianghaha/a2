@@ -1,7 +1,6 @@
 import nltk
 
-grammar_file = open("q1.txt", "r")
-grammar_text = grammar_file.read()
+grammar_text = open("q1.txt", "r").read()
 grammar = nltk.grammar.CFG.fromstring(grammar_text)
 
 #file = open("q1 Negative.txt", "r")
@@ -23,7 +22,7 @@ for line in file:
     for item in result:
         print(item)
 
-print("\nTotal # sentence: {}, Correct: {}".format(total, correct))
+print("\nTotal: {}, Correct: {}".format(total, correct))
 
 """
 Good:
