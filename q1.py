@@ -1,8 +1,29 @@
 import nltk
 
-grammarfile = open("q1.txt", "r")
-grammartext = grammarfile.read()
-grammar = nltk.grammar.CFG.fromstring(grammartext)
+grammar_file = open("q1.txt", "r")
+grammar_text = grammar_file.read()
+grammar = nltk.grammar.CFG.fromstring(grammar_text)
+
+#file = open("q1 Negative.txt", "r")
+file = open("q1 Positive.txt", "r")
+parser = nltk.parse.BottomUpChartParser(grammar)
+
+total = 0
+correct = 0
+
+for line in file:
+    print("")
+    sentence = nltk.tokenize.word_tokenize(line)
+    result = parser.parse_all(sentence)
+    total += 1
+    if len(result) > 0:
+        correct += 1
+    print("sentence: " + line.rstrip())
+    print("Num of results: " + str(len(result)))
+    for item in result:
+        print(item)
+
+print("\nTotal # sentence: {}, Correct: {}".format(total, correct))
 
 """
 Good:
@@ -16,15 +37,3 @@ What N V Adv PP
 What should N V DET N Adv PP
 Where V DET N Adv PP
 """
-file = open("Q3.1Negative.txt", "r")
-#file = open("Q3.1Positive.txt", "r")
-parser = nltk.parse.BottomUpChartParser(grammar)
-for line in file:
-    sentence = nltk.tokenize.word_tokenize(line)
-    result = parser.parse_all(sentence)
-    print("sentence: " + line.rstrip())
-    print("Num of results: " + str(len(result)))
-    for item in result:
-        print(item)
-    print("\n")
-
