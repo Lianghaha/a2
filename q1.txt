@@ -1,13 +1,34 @@
 # Name: Jialiang Zhang  LoginID: zhan2890   Student Number:1002674073
 
 S -> NP VP
+S -> VP
+S -> Aux NP VP
+S -> who VP
+S -> who Aux VP
+S -> where NP VP
+S -> where Aux NP VP
+S -> what Aux NP VPNew
+
 NP -> N
 NP -> DET N
 NP -> Adj N
 PP -> P NP
-VP -> V Adv
-VP -> V NP Adv
-VP -> V NP Adv PP
+VP -> V
+VP -> Adv V
+VP -> VP NP
+VP -> VP Adv
+VP -> VP PP
+
+VPNew -> V
+VPNew -> Adv V
+VPNew -> VPNew Adv
+VPNew -> VPNew PP
+
+Aux -> 'should' | 'will'
+what -> 'what'
+who -> 'who'
+where -> 'where'
+where -> 'where'
 
 DET -> 'the' | 'their' | 'your'
 Adj -> 'old' | 'red' | 'happy'
@@ -15,23 +36,3 @@ Adv -> 'quickly' | 'slowly'
 N -> 'dogs' | 'parks' | 'statues' | 'people'
 V -> ' race' | 'walk' | 'eat'
 P -> 'in' | 'to' | 'on' | 'under ' | 'with'
-
-S -> VP
-S -> Aux NP VP
-
-S -> who VP
-S -> who Aux VP
-
-S -> where NP VP
-S -> where Aux NP VP
-
-VPNew -> V Adv
-VPNew -> V Adv PP
-
-S -> what Aux NP VPNew
-
-Aux -> 'should' | 'will'
-what -> 'what'
-who -> 'who'
-where -> 'where'
-where -> 'where'
