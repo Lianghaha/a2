@@ -1,18 +1,36 @@
 Det -> 'a' | 'an' | 'the' | 'my'
 NPro -> 'I' | 'he' | 'him' | 'she' | 'her' | 'it' | 'we' | 'us' | 'they' | 'them' | 'you'
-Aux -> 'can' | 'may' | 'could' | 'should' | 'might' | 'must' | 'would' | 'will'
 NPrp -> 'Nadia' | 'Ross' | 'Marseilles' | 'Google'
 N -> 'help' | 'cat' | 'fur' | 'eggplant' | 'rutabaga' | 'boat' | 'poodle' | 'autoclave' | 'cloth' | 'cheese' | 'man' | 'elephant' | 'hovercraft' | 'autopoiesis' | 'menu'
-
-V -> 'help' | 'be' | 'arrive' | 'aspire' | 'leave' | 'shoot' | 'eat' | 'fondle' | 'bring' | 'tell' | 'jump' | 'believe' | 'win' | 'see' | 'want' | 'remind' | 'reward' | 'demand' | 'find' | 'give'
-VPast -> 'had'| 'helped' | 'arrived' | 'aspired' | 'left' | 'shot' | 'ate' | 'fondled' | 'brought' | 'told' | 'jumped' | 'believed' | 'won' | 'saw' | 'wanted' | 'reminded' | 'rewarded' | 'demanded' | 'found' | 'gave'
-Ving -> 'leaving'
-Vhave -> 'have' | 'has' | 'had'
-Vbeen -> 'been'
-Vbe -> 'was'
-
 Adv -> 'slowly' | 'immediately' | 'already' | 'really' | 'always'
 Adj -> 'handsome' | 'tall' | 'long' | 'soft'
 P -> 'with' | 'for' | 'on' | 'onto' | 'to' | 'of' | 'from' | 'before' | 'after'
+PBefore -> 'before'
+PPrp -> 'with' | 'for' | 'to' | 'of'
 Pto -> 'to'
 Dem -> 'that'
+
+# Auxiliaries are divided into different categories for auxiliary aggreement
+Aux -> 'can' | 'may' | 'could' | 'should' | 'might' | 'must' | 'would' | 'will'
+AuxPast -> 'may' | 'could' | 'should' | 'might' | 'must' | 'would'
+AuxNoTense -> 'may' | 'should' | 'might' | 'must'
+
+# Verb are divided by different tenses, inflected forms and transitive/intransitive
+V -> 'help' | 'be' | 'arrive' | 'aspire' | 'leave' | 'shoot' | 'eat' | 'fondle' | 'bring' | 'tell' | 'jump' | 'believe' | 'win' | 'see' | 'remind' | 'reward' | 'demand' | 'find' | 'give'
+VPast -> 'had'| 'helped' | 'aspired' | 'left' | 'shot' | 'ate' | 'fondled' | 'brought' | 'told' | 'believed' | 'won' | 'saw' | 'wanted' | 'reminded' | 'rewarded' | 'demanded' | 'found' | 'gave'
+VBoth -> 'helped' | 'left' | 'ate' | 'believed' | 'won' | 'demanded'
+VIntransitive -> 'arrived' | 'jumped'
+Ving -> 'helping' | 'arriving' | 'aspiring' | 'leaving' | 'shooting' | 'eating' | 'fondling' | 'bringing' | 'telling' | 'jumping' | 'believing' | 'wining' | 'seeing' | 'wanting' | 'reminding' | 'rewarding' | 'demanding' | 'finding' | 'giving'
+VingIntransitive -> 'helping' | 'leaving' | 'eating' | 'believing' | 'winning' | 'demanding' | 'arriving' | 'jumping'
+VPerfect -> 'had'| 'helped' | 'aspired' | 'left' | 'shot' | 'eaten' | 'fondled' | 'brought' | 'told' | 'believed' | 'won' | 'saw' | 'wanted' | 'reminded' | 'rewarded' | 'demanded' | 'found' | 'given'
+
+# Special verb want, it has to be connected to "to do..."
+VWant -> 'want'
+VWanted -> 'wanted'
+
+Vhave -> 'have' | 'has' | 'had'
+Vbeen -> 'been'
+Vbeing -> 'being'
+
+Vbe -> 'was'
+

@@ -1,14 +1,37 @@
-# Q3.1
 
+# Present tense
 S -> NP VP
 S -> NPrp VP
+S -> NP Aux VP
+S -> NPrp Aux VP
 
+# Past tense
 S -> NP VPPast
 S -> NPrp VPPast
-S -> NP VPhave VPPast
-S -> NPrp VPhave VPPast
-S -> NP VPhave Ving
-S -> NPrp VPhave Ving
+S -> NP AuxNoTense VPPast
+S -> NPrp AuxNoTense VPPast
+
+# Sentence with has, have, had
+S -> NP VPhave
+S -> NPrp VPhave
+S -> NP AuxPast VPhave
+S -> NPrp AuxPast VPhave
+
+# Sentence with be verb
+S -> NP VPbe
+S -> NPrp VPbe
+
+# that
+S -> S Dem S
+#S -> NP VP Dem S
+#S -> NP VPPast Dem S
+
+# Intransitive verbs
+S -> NP VPIntransitive
+S -> NPrp VPIntransitive
+
+# end with before
+S -> S PBefore
 
 NP -> N
 NP -> NPro
@@ -16,30 +39,77 @@ NP -> Det NP
 NP -> NP PP
 NP -> Adj N
 
-VP -> V Adv
+# Present tense verb
+VP -> VP Adv
 VP -> Adv V
 VP -> V
+VP -> VWant VPto
 VP -> VP NP
 VP -> VP NPrp
 VP -> VP PP
-VP -> VP NP VPto
-VP -> VP NPrp VPto
-VP -> Aux VP
+VP -> VP VPto
+VP -> VP PPPrp
 
-VPPast -> VPast Adv
-VPPast -> Adv VPast
-VPPast -> VPast
+# Past tense verb
 VPPast -> VPPast NP
 VPPast -> VPPast NPrp
 VPPast -> VPPast PP
-VPPast -> VPPast NP VPto
-VPPast -> VPPast NPrp VPto
+VPPast -> VPast NP
+VPPast -> VPast NPrp
+VPPast -> VPPast Adv
+VPPast -> Adv VPast
+VPPast -> VPPast VPto
+VPPast -> VPPast PPPrp
 
-VPhave -> Aux Vhave
-VPhave -> VPhave Vbeen
+# Transitive and Intransitive verbs
+VPPast -> VBoth
+VPPast -> VWanted VPto
+
+# Past perfect verb
+VPPerfect -> VPerfect
+VPPerfect -> Adv VPerfect
+VPPerfect -> VPPerfect PP
+VPPerfect -> VPPerfect Adv
+
+# ing verb
+Vping -> Ving
+VPing -> Adv Ving
+VPing -> VPing PP
+VPing -> VPing Adv
+
+# Have, has, had
 VPhave -> Vhave
+VPhave -> Vhave VPPast
+VPhave -> Vhave Vbeen VPPast
+VPhave -> Vhave Vbeen Ving
+VPhave -> Vhave Vbeen VPbeing
 
-VPto -> Pto V
+# being...
+VPbeing -> Vbeing VPast
+VPbeing -> Vbeing VPast PP
+VPbeing -> Vbeing Adv VPast PP
+VPbeing -> Vbeing VPast PP Adv
+
+# was...
+VPbe -> Vbe Adj
+VPbe -> Vbe VingIntransitive
+VPbe -> Vbe VPing NP
+VPbe -> Vbe Adv PP
+VPbe -> Vbe VPPerfect
+VPbe -> Vbe Adv VPast
+VPbe -> VPbe PP
+VPbe -> VPbe Adv
+VPbe -> VPbe VPto
+
+# to do preposition
+VPto -> Pto VP
+
+VPIntransitive -> VIntransitive
+VPIntransitive -> VIntransitive PP
+VPIntransitive -> VIntransitive PPPrp
+
+# Name phrase
+PPPrp -> PPrp NPrp
 
 PP -> P NP
 Adj -> Adj Adj

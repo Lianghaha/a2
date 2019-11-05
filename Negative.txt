@@ -1,0 +1,34 @@
+# Can’t attach a PP to a name
+Ross with long boat helped the cat
+
+# Can't attach adj to proper noun
+the long soft tall Google arrived
+
+# Can't attach adj to pronoun
+the long her arrived
+
+#Aux
+she could helped
+she can helped
+she has leave
+they have eat
+she has had left
+she has had leave
+I could been leaving
+Ross could been leaving
+Ross will had been helped
+
+Ross brought
+she told to eat
+I could leaving
+I found to jump
+she will wanted to jump
+I could wanted to jump
+Nadia believed Ross ate the eggplant
+Nadia was gave
+Nadia was arrived
+I could have been arrived
+Nadia was aspiring
+she want
+she wanted
+she was wanting

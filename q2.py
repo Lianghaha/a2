@@ -1,4 +1,4 @@
 import nltk
-#nltk.app.srparser()
-nltk.app.rdparser()
+nltk.app.srparser()
+#nltk.app.rdparser()
 
