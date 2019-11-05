@@ -34,16 +34,16 @@ def loop_over_file(file, positive, prof, overgen):
     return total, correct
 
 
-grammar_text = open("Grammar.txt", "r").read() + open("Lexicon.txt", "r").read()
+grammar_text = open("Grammar", "r").read() + open("Lexicon", "r").read()
 open("temp/allgrammar.txt", "w").write(grammar_text)
 grammar = nltk.grammar.CFG.fromstring(grammar_text)
 
 prof_Negative = open("q3 Negative.txt", "r")
 prof_Positive = open("q3 Positive.txt", "r")
-Negative = open("Negative.txt", "r")
-Positive = open("Positive.txt", "r")
-Overgen = open("Overgen.txt", "r")
-Undergen = open("Undergen.txt", "r")
+Negative = open("Negative", "r")
+Positive = open("Positive", "r")
+Overgen = open("Overgen", "r")
+Undergen = open("Undergen", "r")
 parser = nltk.parse.BottomUpChartParser(grammar)
 
 P_prof_total, P_prof_correct = loop_over_file(prof_Positive, 1, 1, 2)
