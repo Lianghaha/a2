@@ -1,3 +1,5 @@
+# Name: Jialiang Zhang  LoginID: zhan2890   Student Number:1002674073
+
 # Can’t attach a PP to a name
 Ross with long boat helped the cat
 
@@ -7,7 +9,7 @@ the long soft tall Google arrived
 # Can't attach adj to pronoun
 the long her arrived
 
-#Aux
+#Aux and been and past perfect verbs
 she could helped
 she can helped
 she has leave
@@ -18,17 +20,25 @@ I could been leaving
 Ross could been leaving
 Ross will had been helped
 
+# Intransitive verb
 Ross brought
-she told to eat
-I could leaving
-I found to jump
-she will wanted to jump
-I could wanted to jump
-Nadia believed Ross ate the eggplant
+Ross aspired
+the cat shot
+
+# was
 Nadia was gave
 Nadia was arrived
-I could have been arrived
 Nadia was aspiring
+
+# want
+she will wanted to jump
+I could wanted to jump
 she want
 she wanted
 she was wanting
+
+she told to eat
+I could leaving
+I found to jump
+I could have been arrived
+Nadia believed Ross ate the eggplant

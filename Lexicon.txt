@@ -1,3 +1,5 @@
+# Name: Jialiang Zhang  LoginID: zhan2890   Student Number:1002674073
+
 Det -> 'a' | 'an' | 'the' | 'my'
 NPro -> 'I' | 'he' | 'him' | 'she' | 'her' | 'it' | 'we' | 'us' | 'they' | 'them' | 'you'
 NPrp -> 'Nadia' | 'Ross' | 'Marseilles' | 'Google'

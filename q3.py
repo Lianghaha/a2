@@ -15,10 +15,9 @@ def loop_over_file(file, positive, prof, overgen):
             correct += 1
         print("sentence: " + line.rstrip())
         print("Num of results: " + str(len(result)))
-        '''
         for item in result:
             print(item)
-        '''
+
     if positive == 1 and prof == 1:
         print("---------------------------------Prof Positive Done ---------------------------------")
     if positive == 1 and prof == 0:
@@ -59,22 +58,3 @@ print("\n(Prof)Negative: Total: {}, Correct: {}".format(N_prof_total, N_prof_cor
 print("\nNegative: Total: {}, Correct: {}".format(N_total, N_correct))
 print("\nOvergen: Total: {}, Correct: {}".format(Over_total, Over_correct))
 print("\nUndergen: Total: {}, Correct: {}".format(Under_total, Under_correct))
-'''
-for line in file:
-    print("")
-    sentence = nltk.tokenize.word_tokenize(line)
-    result = parser.parse_all(sentence)
-    total += 1
-    if len(result) > 0:
-        correct += 1
-    print("sentence: " + line.rstrip())
-    print("Num of results: " + str(len(result)))
-    for item in result:
-        print(item)
-'''
-
-
-
-
-# TODO
-# Grammar, Lexicon, Positive, Negative, Overgen, Undergen

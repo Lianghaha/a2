@@ -1,0 +1,11 @@
+# Name: Jialiang Zhang  LoginID: zhan2890   Student Number:1002674073
+
+Q2.a) 8 trees
+
+Q2.b) The rule NP → NP PP | Det N makes the tree continually expand,
+      because the first word in the default sentence will continually going into
+      the recursion of NP -> NP and will never reach the verb
+
+      The rule  NP → Det N | NP PP parses the first two words in the default
+      sentence into NP and next reaches the verb. It is an adequate solution for
+      the default since it can successfully parse the sentence.

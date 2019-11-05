@@ -1,3 +1,5 @@
+# Name: Jialiang Zhang  LoginID: zhan2890   Student Number:1002674073
+
 S -> NP VP
 NP -> N
 NP -> DET N

@@ -1,5 +1,8 @@
-# grammatical sentences that your grammar incorrectly excludes
+# Name: Jialiang Zhang  LoginID: zhan2890   Student Number:1002674073
+# Grammatical sentences that your grammar incorrectly excludes
+
 I arrived before you arrived
 can you jump
 leaving was long
 the eggplant was aspiring
+I told her she could help

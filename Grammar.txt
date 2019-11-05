@@ -1,3 +1,4 @@
+# Name: Jialiang Zhang  LoginID: zhan2890   Student Number:1002674073
 
 # Present tense
 S -> NP VP
